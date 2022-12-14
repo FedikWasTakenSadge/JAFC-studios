@@ -28,7 +28,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement();
+        if (GameManager.playerHealth > 0)
+        {
+            movement();
+        }
+       
     }
     void movement()
     {
