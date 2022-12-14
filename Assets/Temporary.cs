@@ -41,6 +41,9 @@ public class Temporary : MonoBehaviour
         {
             inAir = false;
         }
-
+        if (collision.gameObject.tag == "player")
+        {
+            GameManager.playerHealth--;
+        }
     }
 }
