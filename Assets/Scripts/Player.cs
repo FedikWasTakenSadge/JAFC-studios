@@ -9,12 +9,14 @@ public class Player : MonoBehaviour
     public float gravityScale = 10;
     public float fallingGravityScale = 40;
 
+    public bool jump = false;
+
     [SerializeField]
     KeyCode left;
     [SerializeField]
     KeyCode right;
     [SerializeField]
-    KeyCode jump;
+    KeyCode space;
     [SerializeField]
     KeyCode dash;
     // Start is called before the first frame update
@@ -40,9 +42,10 @@ public class Player : MonoBehaviour
             transform.position += new Vector3(-8, 0, 0) * Time.deltaTime;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && jump == false)
         {
             rb.AddForce(Vector2.up * jumpAmount, ForceMode2D.Impulse);
+            jump = true;
         }
         if (rb.velocity.y >= 0)
         {
@@ -51,6 +54,14 @@ public class Player : MonoBehaviour
         else if (rb.velocity.y < 0)
         {
             rb.gravityScale = fallingGravityScale;
+        }
+  
+    }
+      void OnCollisionEnter2D(Collision2D collision)
+      {
+        if (collision.gameObject.tag == "floor")
+        {
+            jump = false;
         }
     }
  }
