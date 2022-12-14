@@ -15,6 +15,7 @@ public class Temporary : MonoBehaviour
     int walkDirection = 1;
     [SerializeField]
     int walkSpeed = 5;
+    [SerializeField]
     float jumpTimer = 5f;
     void Start()
     {
