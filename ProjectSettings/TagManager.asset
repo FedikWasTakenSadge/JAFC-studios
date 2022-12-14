@@ -6,6 +6,7 @@ TagManager:
   tags:
   - floor
   - wall
+  - player
   layers:
   - Default
   - TransparentFX
