@@ -24,13 +24,16 @@ public class Temporary : MonoBehaviour
     }
     void Update()
     {
-        jumpTimer -= 1f * Time.deltaTime;
-        transform.position += new Vector3(walkSpeed * walkDirection * Time.deltaTime, 0, 0);
-        if (jumpTimer<= 0&& inAir == false)
+        if (GameManager.playerHealth > 0)
         {
-            rb.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
-            inAir = true;
-            jumpTimer = Random.Range(2, 5);
+            jumpTimer -= 1f * Time.deltaTime;
+            transform.position += new Vector3(walkSpeed * walkDirection * Time.deltaTime, 0, 0);
+            if (jumpTimer <= 0 && inAir == false)
+            {
+                rb.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
+                inAir = true;
+                jumpTimer = Random.Range(2, 5);
+            }
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
