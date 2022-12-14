@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static int playerHealth = 8;
-    public Text health;
+   
     public static int enemyHealth = 3;
+
+    public Text health;
     // Start is called before the first frame update
     void Start()
     {

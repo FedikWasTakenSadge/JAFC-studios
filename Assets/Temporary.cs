@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Temporary : MonoBehaviour
 {
+    Vector3 respawn = new Vector3(-10f, 2f, 0);
     [SerializeField]
     Rigidbody2D rb;
     [SerializeField]
@@ -43,6 +44,7 @@ public class Temporary : MonoBehaviour
         }
         if (collision.gameObject.tag == "player")
         {
+            collision.gameObject.transform.position = respawn;
             GameManager.playerHealth--;
         }
     }
