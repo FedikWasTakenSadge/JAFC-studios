@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Skog.unity
     guid: 529cea4956925d849b0e96a89ecdc1b9
+  - enabled: 1
+    path: Assets/Scenes/level 1.unity
+    guid: 270d3471e37c3e24e89fba8080278bb7
   m_configObjects: {}
