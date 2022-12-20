@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ClaraScenes.unity
     guid: e74412e972050c547ad283d31c1f125d
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Skog.unity
+    guid: 529cea4956925d849b0e96a89ecdc1b9
   m_configObjects: {}
