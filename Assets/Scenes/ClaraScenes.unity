@@ -131,11 +131,20 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 5593960}
   - component: {fileID: 5593959}
   - component: {fileID: 5593958}
   m_Layer: 0
   m_Name: EventSystem
+=======
+  - component: {fileID: 15992507}
+  - component: {fileID: 15992506}
+  - component: {fileID: 15992505}
+  - component: {fileID: 15992504}
+  m_Layer: 5
+  m_Name: Canvas (1)
+>>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
