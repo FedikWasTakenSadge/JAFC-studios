@@ -886,11 +886,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 643355d5c25695840b69d316589b42a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1245544823}
+  enemy: {fileID: 1485831213}
   rb: {fileID: 1485831215}
   jumpHeight: 5
   inAir: 0
   walkSpeed: 5
   jumpTimer: 5
+  walkSpeedCloseToPlayer: 10
 --- !u!1 &1572261292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,8 +1349,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023364878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.09, y: -1.23, z: 0}
-  m_LocalScale: {x: -0.9642899, y: -5.5770245, z: 1}
+  m_LocalPosition: {x: -11.1343, y: 0.4521, z: 0}
+  m_LocalScale: {x: -0.8757681, y: -8.941086, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

@@ -5,9 +5,9 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public float jumpAmount = 35;
-    public float gravityScale = 10;
-    public float fallingGravityScale = 40;
+    public float jumpAmount = 20;
+    public float gravityScale = 7;
+    public float fallingGravityScale = 7;
 
     public bool jump = false;
 
